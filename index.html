@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width-divace-width, initial-scale=1, shrink-to-fit=no'>
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="Imagenes/nutrisa205ffdd0403844e1b186a4bb53449092.png">
+  <title>Nutrisa - Khelde</title>
+  <link rel="shortcut icon" href="Imagenes/nutrisa205ffdd0403844e1b186a4bb53449092.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="codigo.js">
+</head>
+
+<body>
+  <div class="barr">
+    <div class="barrOrd">
+      <a href="index.html"><img src="Imagenes/nutrisa205ffdd0403844e1b186a4bb53449092.png"> </a>
+      <h1>HELADOS NUTRISA</h1>
+    </div>
+  </div>
+  <br>
+  <div class="centro">
+    <div class="body">
+      <form>
+        <div>
+          <h1>Menú</h1>
+          <h3>Añade un producto:</h3>
+        </div>
+        <div>
+          <label for="categoria">Categoría:</label>
+          <select name="categoria" required>
+            <option value="">Seleccione Categoría …</option>
+            <option value="Helado">Helado</option>
+            <option value="Copa">Copa</option>
+          </select>
+        </div>
+        <div id="sabores">
+          <h3>Sabores que ofrecemos</h3>
+        </div>
+        <div>
+          <label for="sabor">Sabor:</label>
+          <input name="sabor" id="sabor" class="input" type="text" required>
+        </div>
+        <div>
+          <label for="cantidad">Cantidad:</label>
+          <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=100 required>
+        </div>
+        <div>
+         <label for="">Tamaño:</label>
+         <br>
+          <input type="radio" name="size" id="small" value="pequeño" checked><label for="small">Pequeño (2)</label><br>
+          <input type="radio" name="size" id="medium" value="mediano"><label for="medium">Mediano (5)</label><br>
+          <input type="radio" name="size" id="big" value="grande"><label for="big">Grande (7)</label>
+        </div>
+        <div>
+        <label for="">Complementos</label><br>
+          <input type="checkbox" id="mani" name="mani" value="Maní"><label for="mani">Maní</label><br>
+          <input type="checkbox" id="chocolate" name="chocolate" value="Chispas de chocolate"><label
+            for="chocolate">Chispas de Chocolate</label><br>
+          <input type="checkbox" id="chispas" name="chispas" value="Chispas de Colores"><label for="chispas">Chispas de
+            Colores</label><br>
+          <input type="checkbox" id="leche" name="leche" value="Leche Condensada"><label for="leche">Leche
+            Condensada</label><br>
+        </div>
+        <div>
+          <input type="submit" id="send-button" name="send-button" class="button">
+          <input type="reset" value="Borrar" class="button">
+        </div>
+      </form>
+      <div class="img">
+
+      </div>
+      <div class="container" id="container">
+        <input type="button" id="finish" class="button" value="Completar Compra">
+      </div>
+    </div>
+  </div>
+  <br> <br>
+</body>
+<script src="codigo.js"></script>
+
+</html>
